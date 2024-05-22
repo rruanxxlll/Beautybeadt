@@ -1,6 +1,6 @@
 *主樣式CSS 文件: bb-template.css 、 style-starter.css (因為當時有參考其他模板因此有兩個)
 
-*字型: "Roboto", "sans-serif" ==> 引用自Google Font 匯入bb-template.css、開頭複製首頁的引用即可
+*字型: "Roboto", sans-serif ==> 引用自Google Font 匯入bb-template.css、開頭複製首頁的引用即可
 
 *logo圖片:projectB&B/logo
 
