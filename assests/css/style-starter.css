@@ -173,13 +173,13 @@ sup {
 }
 
 a {
-  color: #df0e62;
+  color: #396CE8;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #df0e62;
+  color: #396CE8;
   text-decoration: underline;
 }
 
@@ -14152,7 +14152,7 @@ ul {
 :root {
   --theme-color: #21174a;
   --theme-yellow: #fac70b;
-  --theme-rose: #df0e62;
+  --theme-rose: #396CE8;
   --theme-title: #0c0f0a;
   --theme-nav: #262626;
   --theme-dark: #111;
@@ -14167,7 +14167,7 @@ ul {
 }
 
 [data-theme="dark"] {
-  --theme-rose: #df0e62;
+  --theme-rose: #396CE8;
   --theme-para: #888;
   --theme-hd-bg: #0c0f0a;
   --theme-dark: #111;
@@ -16126,7 +16126,7 @@ h2.resp-accordion {
   margin-bottom: -1px !important;
   border: none !important;
   color:var(--theme-title)!important;
-  background:#df0e62!important;
+  background:#396CE8!important;
 }
 
 .resp-content-active,
@@ -19499,6 +19499,3 @@ input:checked+.mode-container i.gg-sun {
 input:checked+.mode-container i.gg-moon {
   display: none;
 }
-
-/*-- //dark and light mode styling --*/
-sourceMappingURL=style-freedom.css.map
