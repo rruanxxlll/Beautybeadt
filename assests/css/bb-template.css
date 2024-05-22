@@ -25,7 +25,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900");
 /* 
 ---------------------------------------------
 reset
@@ -77,7 +77,8 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -117,7 +118,8 @@ Global Styles
 */
 html,
 body {
-  font-family: 'Roboto', 'Noto Sans TC';
+  font-family: "Roboto", "sans-serif";
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 ::selection {
@@ -1840,4 +1842,196 @@ body {
   z-index: -1;
   display: grid;
   align-items: center;
+}
+
+/* gmail sidemenu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  position: fixed;
+  height: 100%;
+  margin-left: 15px;
+  margin-top: 15px;
+  overflow: scroll;
+}
+.wrapper .logo {
+  display: flex;
+  align-items: center;
+}
+.wrapper .logo #menu_bar {
+  color: #5f6368;
+  font-size: 25px;
+}
+
+.logo i {
+  padding: 0 5px;
+}
+
+.wrapper .nav_bar {
+  margin-top: 15px;
+  border-radius: 20px;
+}
+
+.wrapper .nav_bar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.wrapper .nav_bar li .nav_bar_label {
+  text-decoration: none;
+  font-size: 16px;
+  color:black;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper ul li a i {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.submenu {
+  margin: 15px 25px;
+}
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.button_compose a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.button_compose i {
+  padding: 0 10px;
+  font-size: 20px;
+}
+.spacing {
+  height: 0;
+  margin: 15px;
+}
+
+.button_compose {
+  background-color: #ffffff;
+  height: 50px;
+  width: 140px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.button_compose:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.submenu1_show {
+  display: block;
+}
+.submenu2_show {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: inline-block !important;
+}
+.nav_bar li a .bx-chevron-down.rotate {
+  transform: rotate(-180deg);
+}
+
+.wrapper.closed .nav_bar_label {
+  width: 50px;
+}
+.wrapper.closed .submenu2_show {
+  display: none;
+}
+.wrapper.closed .submenu2_label {
+  display: none;
+}
+.wrapper.closed .button_compose {
+  width: 50px;
+}
+
+.wrapper.closed ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.wrapper.closed .nav_bar_name {
+  display: none;
+}
+.wrapper.closed .bx-chevron-down {
+  display: none;
+}
+.wrapper.closed img {
+  display: none;
+}
+.wrapper.closed .category_submenu_name {
+  display: none;
+}
+
+.nav_bar li a:hover {
+  background: white;
+}
+.nav_bar li a {
+  height: 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.nav_bar:hover .bx-chevron-down {
+  display: block;
+}
+.nav_bar:hover .button_compose {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar:hover .button_compose a i {
+  padding: 0 10px;
+}
+.nav_bar:hover .nav_bar_name {
+  display: inline-block;
+}
+.nav_bar:hover .submenu {
+  margin: 15px 25px;
+}
+.nav_bar:hover .submenu li a i {
+  font-size: 20px;
+}
+.nav_bar:hover .nav_bar_label {
+  width: auto !important;
+}
+.nav_bar:hover .category_submenu_name {
+  display: block;
+}
+.nav_bar:hover .submenu2_label {
+  display: block;
+}
+.nav_bar:hover .submenu2_name {
+  display: inline-block;
 }
