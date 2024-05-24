@@ -7,7 +7,7 @@
 *icon:首頁使用fontawesome,進入DashBoard後使用的icon放在:projectB&B/assests/icon
 
 *navbar顏色:
-background:linear-gradient(to right top, rgb(246,222,136)
+background:linear-gradient(to right, rgb(246,222,136)
 20%, rgb(242,128,128) 80%)
 ==>雙色漸層，漸層方向為項右上漸層
 
